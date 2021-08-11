@@ -4,6 +4,7 @@ cffi==1.14.6
 constantly==15.1.0
 cryptography==3.4.7
 cssselect==1.1.0
+greenlet==1.1.1
 h2==3.2.0
 hpack==3.0.0
 hyperframe==5.2.0
@@ -26,6 +27,7 @@ queuelib==1.6.1
 Scrapy==2.5.0
 service-identity==21.1.0
 six==1.16.0
+SQLAlchemy==1.4.22
 Twisted==21.7.0
 typing-extensions==3.10.0.0
 w3lib==1.22.0
