@@ -25,13 +25,16 @@ def read_db():
     return items
 
 
-def plot():
-    """Plot data"""
+def make_dfs():
     df = read_db()
     df['created_at'] = pd.to_datetime(df["created_at"])
     unique_titles = df['title'].unique()
-    dfs = [df[df['title'] == x].reset_index() for x in unique_titles]
-    for df in dfs:
+    return [df[df['title'] == x].reset_index() for x in unique_titles]
+
+
+def plot():
+    """Plot data"""
+    for df in make_dfs():
         plt.plot(df['created_at'], df['price'], label=df['title'][0])
     
     plt.legend()

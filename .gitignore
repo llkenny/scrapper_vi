@@ -133,3 +133,4 @@ hidden_variables.py
 
 # Private database
 scrapy_items.db
+requirements.txt
