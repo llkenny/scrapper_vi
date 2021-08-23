@@ -134,3 +134,6 @@ hidden_variables.py
 # Private database
 scrapy_items.db
 requirements.txt
+
+# Backups
+scrapy_items_*.zip
