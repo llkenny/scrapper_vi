@@ -6,14 +6,12 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 
 Разовый запуск:
+python3
 import main
 main.fetch()
 
 Запуск обновления по расписанию
-cd scrapper_vi/scrapper_vi
-python3
-import scheduler
-scheduler.perform_schedule()
+python3 scheduler.py
 
 Дашборд:
 python3 dash_app.py
