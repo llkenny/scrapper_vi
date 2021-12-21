@@ -7,9 +7,13 @@ def job():
 
 
 def perform_schedule():
-    # schedule.every().day.at("12:50").do(job)
-    schedule.every(2).hours.do(job)
+    """Performs fetching every 3 hours"""
+    schedule.every(3).hours.do(job)
 
     while True:
         schedule.run_pending()
         time.sleep(60)
+
+
+if __name__ == "__main__":
+    perform_schedule()
