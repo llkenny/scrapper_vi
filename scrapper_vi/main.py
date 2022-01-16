@@ -12,6 +12,7 @@ def run():
 
 def fetch():
     os.system("cd scrapper_vi")
+    os.system("scrapy crawl wb")
     os.system("scrapy crawl vi")
 
 
